@@ -1,2 +1,2 @@
-# mxpwebapp
-Beta version spotters app
+# Mxpwebapp
+App for spotters - beta version

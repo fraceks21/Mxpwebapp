@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+    h1 Plane: #{plane.tailnumber}
+
+
+    div(style='margin-left:20px;margin-top:20px')
+
+        h3 Info
+        p #[strong Company: ] #{plane.company}
+        p #[strong Type: ] #{plane.aircraft_type} - #{plane.extended_aircraft_type}
+        p #[strong Livery: ] #{plane.livery}
+
+        p Database Id: #[italic #{plane._id}]
+
+        hr
+        p
+            a(href=plane.url + '/delete') Delete Plane

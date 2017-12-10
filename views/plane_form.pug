@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1=title
+
+    form(method='POST' action='')
+        div.form-group
+            label(for='company') Company:
+            input#company.form-control(type='text', placeholder='Alitalia' name='company')
+
+            label(for='tailnumber') Tailnumber:
+            input#tailnumber.form-control(type='text', placeholder='I-DEMF (required)' name='tailnumber' required='true' value=(undefined===plane ? '' : plane.tailnumber))
+
+        div.form-group
+            label(for='aircraft_type') Aircraft Type:
+            input#aircraft_type.form-control(type='text', placeholder='B747' name='aircraft_type')
+
+            label(for='extended_aircraft_type') Extended Aircraft Type:
+            input#extended_aircraft_type.form-control(type='text', placeholder='Boeing 747-243B' name='extended_aircraft_type')
+
+        div.form-group
+            label(for='livery') Livery:
+            input#livery.form-control(type='text', name='livery', placeholder='Baci Perugina Livery' required='true' value=(undefined===plane ? '' : plane.livery) )
+        button.btn.btn-primary(type='submit') Submit
+    if errors
+        ul
+            for error in errors
+                li!= error.msg

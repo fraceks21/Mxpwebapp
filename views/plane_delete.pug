@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 #{title}: #{plane.name}
+
+        h4 Do you really want to delete this Plane?
+
+        form(method='POST' action='')
+            div.form-group
+                input#planeid.form-control(type='hidden',name='planeid', required='true', value=plane._id )
+
+            button.btn.btn-primary(type='submit') Delete
