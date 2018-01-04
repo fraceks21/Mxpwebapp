@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-console.log('This script populates some test books, authors, genres and bookinstances to your database. Specified database as argument - e.g.: populatedb mongodb://your_username:your_password@your_dabase_url');
+console.log('We are going to insert a lot of planes in this database. Thanks for you help');
 
 //Get arguments passed on command line
 var userArgs = process.argv.slice(2);
@@ -46,35 +46,72 @@ function planeCreate(company, aircraft_type, extended_aircraft_type, tailnumber,
 function createPlanes(cb) {
     async.parallel([
             function(callback) {
-                planeCreate('Aegean Airlines', 'A320', 'Airbus A320-232', 'SX-DGI', 'Visitgreece.com Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5422', 'Phoenix Livery', callback);
             },
             function(callback) {
-                planeCreate('AeroMexico', 'B772', 'Boeing 777-2QR(ER)', 'N774AM', 'CDMX—Ciudad de Mexico Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5390', 'Gold Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('AeroMexico', 'B772', 'Boeing 777-2QR(ER)', 'N776AM', 'CDMX—Ciudad de Mexico Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5198', 'Yellow Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('Air China', 'B77W', 'Boeing 777-39L(ER)', 'B-2035', 'Smiling China Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5178', 'Silver Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('Air China', 'B77W', 'Boeing 777-2QR(ER)', 'B-2006', 'Love China Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5177', 'Pink Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('Air France', 'B772', 'Boeing 777-328(ER)', 'F-GSQI', 'French Flag Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5176', 'Silver Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('Air Macau', 'A321', 'Airbus A321-231', 'B-MBM', 'Macau Welcomes You Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-2642', 'Pink Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('AirAsia X', 'A333', 'Airbus A330-343', '9M-XXF', 'Fly to Malaysia Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5214', 'Pink Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('Allegiant Air', 'A320', 'Airbus A320-214', 'N228NV', 'Visit Florida Livery', callback);
+                planeCreate('Air China', 'B738', 'Boeing 737-89L', 'B-5211', 'Pink Peony Livery', callback);
             },
             function(callback) {
-                planeCreate('Azul Linhas Aereas', 'E190', 'Embraer ERJ-195', 'PR-AYV', 'Brazilian Flag Livery', callback);
+                planeCreate('Air China', 'A332', 'Airbus A330-243', 'B-6076', 'Zichen Hao (Capital Pavilion Liner) Livery', callback);
             },
+            function(callback) {
+                planeCreate('Air China', 'A332', 'Airbus A330-243', 'B-6075', 'Zijin Hao (Forbidden Pavilion Liner) Livery', callback);
+            },
+            function(callback) {
+                planeCreate('Air China', 'A321', 'Airbus A321-213', 'B-6365', 'Beautiful Sichuan II Livery', callback);
+            },
+            function(callback) {
+                planeCreate('Air China', 'A321', 'Airbus A321-213', 'B-6361', 'Beautiful Sichuan Livery', callback);
+            },
+            function(callback) {
+                planeCreate('Air China', 'A320', 'Airbus A320-214', 'B-6075', 'Plum Blossom / Splendid Hubei (锦绣湖北) Livery', callback);
+            },
+
+
+
+        
+            /* function(callback) {
+                planeCreate('company', 'type', 'airicraft', 'tail', 'OneWorld Livery', callback);
+            }, */
+
+
+
+
+
+            
+
+
+
+
+
+            
+            
+
+
+
+
+            
         ],
         // optional callback
         cb);

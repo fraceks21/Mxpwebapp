@@ -26,6 +26,7 @@ exports.plane_list = function(req, res) {
 
 };
 
+
 // Display detail page for a specific plane
 
 exports.plane_detail = function(req, res, next) {
@@ -143,3 +144,5 @@ exports.plane_update_get = function(req, res) {
 exports.plane_update_post = function(req, res) {
     res.send('NOT IMPLEMENTED: Plane update POST');
 };
+
+
