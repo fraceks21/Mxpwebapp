@@ -1,7 +1,7 @@
 var Client = require('node-rest-client').Client;
 var http = require('http');
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://cekky:cekky1991@ds129386.mlab.com:29386/mxpwebapp";
+var url = "Insert here your database url";
 var Twit = require('twit');
 var TwitterBot = require("node-twitterbot").TwitterBot;
 
@@ -9,8 +9,8 @@ var TwitterBot = require("node-twitterbot").TwitterBot;
 
 
 
-    var username = 'fraceks';
-    var apiKey = '371189c74c71e5e5728caa547c0ad83e1754faa8';
+    var username = 'Insert here your Username';
+    var apiKey = 'Insert here your APIkei';
     var fxmlUrl = 'https://flightxml.flightaware.com/json/FlightXML3/';
 
     var client_options = {
@@ -19,10 +19,10 @@ var TwitterBot = require("node-twitterbot").TwitterBot;
     };
 
     var twitter_BOT = new Twit({
-        consumer_key: 'FLtwZjySUjhCuqmA3lDzHjG2l',
-        consumer_secret: 'WVlDDBptYRazMFkCBjjLXA825gseI1Ck2OHlwukxEsneveEsWv',
-        access_token: '934150673133920256-AzG2BsqDztoJrSDdlWYY2xVj9DbBn3U',
-        access_token_secret: 'XgUmUaW2nyZl2yYOQXfnHcn5vX1ZNiDb0e2Oxgk6tYGIj'
+        consumer_key: 'Insert here your consumer key',
+        consumer_secret: 'Insert here your consumer secret',
+        access_token: 'Insert here your access token',
+        access_token_secret: 'Insert here your access token secret'
     });
 
 
@@ -34,8 +34,8 @@ var TwitterBot = require("node-twitterbot").TwitterBot;
 
     var findAirportBoardsArgs = {
         parameters: {
-            airport_code: 'LIMC',
-            howMany: 30
+            airport_code: 'Select your airport',
+            howMany: Select how many plane do you want to scan
         }
     };
 
