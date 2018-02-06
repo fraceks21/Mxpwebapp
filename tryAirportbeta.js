@@ -13,8 +13,8 @@ var TwitterBot = require("node-twitterbot").TwitterBot;
 
 
 
-    var username = 'fraceks';
-    var apiKey = '371189c74c71e5e5728caa547c0ad83e1754faa8';
+    var username = '';
+    var apiKey = '';
     var fxmlUrl = 'https://flightxml.flightaware.com/json/FlightXML3/';
 
     var client_options = {
@@ -23,10 +23,10 @@ var TwitterBot = require("node-twitterbot").TwitterBot;
     };
 
     var twitter_BOT = new Twit({
-        consumer_key: 'FLtwZjySUjhCuqmA3lDzHjG2l',
-        consumer_secret: 'WVlDDBptYRazMFkCBjjLXA825gseI1Ck2OHlwukxEsneveEsWv',
-        access_token: '934150673133920256-AzG2BsqDztoJrSDdlWYY2xVj9DbBn3U',
-        access_token_secret: 'XgUmUaW2nyZl2yYOQXfnHcn5vX1ZNiDb0e2Oxgk6tYGIj'
+        consumer_key: '',
+        consumer_secret: '',
+        access_token: ,
+        access_token_secret: ''
     });
 
 
