@@ -3,11 +3,14 @@ extends layout
 block content
     h1= title
 
-    ul
+    tr
     each plane in plane_list
-        li
+        th
             a(href=plane.url) #{plane.tailnumber}
-            |   &nbsp; #{plane.company} &nbsp; (#{plane.aircraft_type})
+        th
+            #{plane.company}
+        th 
+            (#{plane.aircraft_type})
 
 
     else
