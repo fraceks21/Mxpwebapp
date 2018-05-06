@@ -3,16 +3,14 @@ extends layout
 block content
     h1= title
 
-each plane in plane_list
-    table(style='width:100%', border='1')
-        tr
-            th Tailnumber
-            th Company
-            th Type
-    
-    tr
-        td a(href=plane.url) #{plane.tailnumber}
-        td #{plane.company} 
-        td (#{plane.aircraft_type})
 
+    ul
+    each plane in plane_list
+        li
+            a(href=plane.url) #{plane.tailnumber}
+            |   #{plane.company} - (#{plane.aircraft_type})
+
+
+    else
+        li There are no plane.
 
