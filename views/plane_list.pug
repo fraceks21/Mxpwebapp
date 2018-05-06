@@ -3,19 +3,18 @@ extends layout
 block content
     h1= title
 
-    table
-            tr
-                th Tailnumber
-                th Company
-                th Aircraft Type
-    tbody
-        each plane in plane_list
-        tr  
-            th
-                a(href=plane.url) #{plane.tailnumber}
-            th 
-                #{plane.company} 
-            th
-                (#{plane.aircraft_type})
+    table(style='width:100%', border='1')
+        tr
+            th Tailnumber
+            th Company
+            th Type
+  tr
+  each plane in plane_list
+    td
+        a(href=plane.url) #{plane.tailnumber}
+    th
+        #{plane.company} 
+    th
+        (#{plane.aircraft_type})
 
 
