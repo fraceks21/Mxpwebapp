@@ -3,12 +3,13 @@ extends layout
 block content
     h1= title
 
+each plane in plane_list
     table(style='width:100%', border='1')
         tr
             th Tailnumber
             th Company
             th Type
-    each plane in plane_list
+    
     tr
         td a(href=plane.url) #{plane.tailnumber}
         td #{plane.company} 
