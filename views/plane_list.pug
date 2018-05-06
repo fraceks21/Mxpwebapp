@@ -10,11 +10,8 @@ block content
             th Type
   tr
   each plane in plane_list
-    td
-        a(href=plane.url) #{plane.tailnumber}
-    td
-        #{plane.company} 
-    td
-        (#{plane.aircraft_type})
+    td a(href=plane.url) #{plane.tailnumber}
+    td #{plane.company} 
+    td (#{plane.aircraft_type})
 
 
