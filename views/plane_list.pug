@@ -3,21 +3,17 @@ extends layout
 block content
     h1= title
 
-    table
-        tr
-            th Tailnumber
-            th Company
-            th Aircraft Type
-            
-        tr
-            each plane in plane_list
-            th
-                a(href=plane.url) #{plane.tailnumber}
-            th
-                #{plane.company}
-            th 
-                (#{plane.aircraft_type})
+    div
+        table
+            thead
+                tr: th Tailnumber
+                    th Company
+                    th Aircraft Type
+    tbody
+        each plane in plane_list
+        tr  
+            td
+            a(href=plane.url) #{plane.tailnumber}
+            td #{plane.company} 
+            td(#{plane.aircraft_type})
 
-
-    else
-        li There are no plane.
